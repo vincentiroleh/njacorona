@@ -8,81 +8,67 @@
     <link rel="stylesheet" href="public/style.css" />
   </head>
   <body>
-    <section class="text-center text-light bg-dark jumbotron jumbotron-fluid">
-      <h4>COVID-19 SOUTH EAST REPORT</h4>
+    <section class="text-light bg-dark jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h4>NIGERIA COVID-19</h4>
+      </div>
     </section>
 
     <main class="container">
+      <!-- Nigeria Section -->
       <section class="row mt-5">
         <div class="col-sm-12">
           <div class="card mb-3 text-white bg-dark">
             <div class="card-header nigeria"></div>
             <div class="card-body row">
-              
               <div class="col-sm-3 text-center mt-3 mb-3">
                 <h6 class="card-title">Confirmed</h6>
-                <p class="nigeria_confirmed_cases card-text btn btn-outline-primary"></p>
+                <p
+                  class="nigeria_confirmed_cases card-text btn btn-outline-primary"
+                ></p>
               </div>
               <div class="col-sm-3 text text-center mt-3 mb-3">
                 <h6 class="card-title">Active</h6>
-                <p class="nigeria_active_cases card-text btn btn-outline-warning"></p>
+                <p
+                  class="nigeria_active_cases card-text btn btn-outline-warning"
+                ></p>
               </div>
               <div class="col-sm-3 text-center mt-3 mb-3">
                 <h6 class="card-title">Discharged</h6>
-                <p class="nigeria_discharged_cases card-text btn btn-outline-success"></p>
+                <p
+                  class="nigeria_discharged_cases card-text btn btn-outline-success"
+                ></p>
               </div>
               <div class="col-sm-3 text-center mt-3 mb-3">
                 <h6 class="card-title">Death</h6>
-                <p class="nigeria_death_cases card-text btn btn-outline-danger"></p>
+                <p
+                  class="nigeria_death_cases card-text btn btn-outline-danger"
+                ></p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="card mb-3 text-white bg-dark">
-            <div class="card-header abia"></div>
-            <div class="card-body">
-              <h6 class="card-title">Total Number of cases</h6>
-              <p class="abia__report card-text"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="card mb-3 text-white bg-secondary">
-            <div class="card-header imo"></div>
-            <div class="card-body">
-              <h6 class="card-title">Total Number of cases</h6>
-              <p class="imo__report card-text"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="card mb-3 text-white bg-danger">
-            <div class="card-header enugu"></div>
-            <div class="card-body">
-              <h6 class="card-title">Total Number of cases</h6>
-              <p class="enugu__report card-text"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <div class="card mb-3 text-white bg-info">
-            <div class="card-header ebonyi"></div>
-            <div class="card-body">
-              <h6 class="card-title">Total Number of cases</h6>
-              <p class="ebonyi__report card-text"></p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- search section -->
+      <section class="row">
+        <!-- Search form -->
+        <div class="md-form mt-0 col-sm-12">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+      </section>
+
+      <!-- List of states section -->
+      <section class="states row mt-5"></section>
     </main>
 
-    <footer class="text-center mt-5 mb-3">        
-            💓 <a href="http://iroleh.me" class="text-primary">@me</a>        
+    <footer class="text-center mt-5 mb-3">
+      💓 <a href="http://iroleh.me" class="text-primary">@me</a>
     </footer>
   </body>
   <script src="public/app.js"></script>
