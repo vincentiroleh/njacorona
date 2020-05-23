@@ -27,9 +27,3 @@ body {
   cursor: progress;
   background-color: whitesmoke;
 }
-
-img {
-  margin: auto;
-  max-width: 40px;
-  border-radius: 10%;
-}
