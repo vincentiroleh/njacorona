@@ -1,0 +1,41 @@
+{
+  "name": "covid_19",
+  "version": "1.0.0",
+  "description": "A Covid-19 Tracker for Nigeria, where users can view the current stats of the pandemic by states",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentiroleh/covid_19.git"
+  },
+  "keywords": [
+    "Covid-19",
+    "Coronovirus",
+    "Web",
+    "App"
+  ],
+  "author": "Vincent Iroleh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentiroleh/covid_19/issues"
+  },
+  "homepage": "https://github.com/vincentiroleh/covid_19#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}

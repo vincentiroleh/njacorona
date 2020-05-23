@@ -1,29 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Covid-19 Report</title>
+    <title>Covid-19 Tracker</title>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <section class="text-light bg-dark jumbotron jumbotron-fluid">
       <div class="container">
         <h5 class="float-left text-center">
           <span class="text-success">NIGERIA</span> COVID-19
-          <span class="text-success">REPORT</span>
+          <span class="text-success">TRACKER</span>
         </h5>
       </div>
     </section>
@@ -33,13 +34,15 @@
       <section class="row mt-5">
         <div class="col-sm-12">
           <div class="card mb-3">
-            <div class="card-header nigeria text-white bg-dark"></div>
+            <div class="card-header nigeria text-white bg-dark">Nigeria</div>
             <div class="card-body row">
               <div class="col-sm-6 col-lg-3 mt-3 mb-3">
                 <div class="card text-dark border-button">
                   <p
                     class="nigeria_confirmed_cases card-text text-primary font-m ma-10"
-                  ></p>
+                  >
+                    <%= data.totalConfirmedCases %>
+                  </p>
                   <h6 class="card-title ma-10">Cases Till Date</h6>
                 </div>
               </div>
@@ -48,7 +51,9 @@
                 <div class="card text-dark border-button">
                   <p
                     class="nigeria_active_cases card-text text-warning font-m ma-10"
-                  ></p>
+                  >
+                    <%= data.totalActiveCases %>
+                  </p>
                   <h6 class="card-title ma-10">Active Cases</h6>
                 </div>
               </div>
@@ -57,7 +62,9 @@
                 <div class="card text-dark border-button">
                   <p
                     class="nigeria_discharged_cases card-text text-success font-m ma-10"
-                  ></p>
+                  >
+                    <%= data.discharged %>
+                  </p>
                   <h6 class="card-title ma-10">Recovered Cases</h6>
                 </div>
               </div>
@@ -66,7 +73,9 @@
                 <div class="card text-dark border-button">
                   <p
                     class="nigeria_death_cases card-text text-danger font-m ma-10"
-                  ></p>
+                  >
+                    <%= data.death %>
+                  </p>
                   <h6 class="card-title ma-10">Deaths</h6>
                 </div>
               </div>
@@ -77,8 +86,6 @@
 
       <!-- search section -->
       <section class="row">
-        
-
         <div class="input-group mb-3 md-form mt-0 col-sm-12">
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">Search</span>
@@ -96,7 +103,41 @@
       </section>
 
       <!-- states section -->
-      <section class="states row mt-5"></section>
+      <section class="row mt-5" id="states">
+        <% states.forEach((eachState) => { %>
+        <div class="col-sm-6 states-collection">
+          <div class="card mb-3 text-white border border-light rounded">
+            <div class="card-header text-white bg-dark">
+              <%= eachState.state %>
+            </div>
+            <div class="card-body">
+              <div class="text-dark row text">
+                <div class="card border-button col-sm-12">
+                  <span class="card-text text-primary ma-5">
+                    <%= eachState.confirmedCases %> </span
+                  ><span class="card-title ma-5">Confirmed</span>
+                </div>
+                <div class="card border-button col-sm-12">
+                  <span class="card-text text-warning ma-5">
+                    <%= eachState.casesOnAdmission %> </span
+                  ><span class="card-title ma-5">Active</span>
+                </div>
+                <div class="card border-button col-sm-12">
+                  <span class="card-text text-success ma-5">
+                    <%= eachState.discharged %> </span
+                  ><span class="card-title ma-5">Recovered</span>
+                </div>
+                <div class="card border-button col-sm-12">
+                  <span class="card-text text-danger ma-5">
+                    <%= eachState.death %> </span
+                  ><span class="card-title ma-5">Death</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </section>
     </main>
 
     <footer class="text-center mt-5 mb-3 bg-dark jumbotron jumbotron-fluid">
@@ -118,5 +159,5 @@
       </div>
     </footer>
   </body>
-  <script src="public/app.js"></script>
+  <script src="js/main.js"></script>
 </html>

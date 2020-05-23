@@ -3,6 +3,9 @@
         "Abia",
         "Anambra",
         "Covid",
-        "Ebonyi"
-    ]
+        "Ebonyi",
+        "Iroleh",
+        "crossorigin"
+    ],
+    "editor.formatOnSave": true,
 }
