@@ -71,4 +71,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgments
 
-* [Favicon made by](https://www.flaticon.com/authors/freepik)
+* [Favicon made by flaticon.com](https://www.flaticon.com/authors/freepik)
