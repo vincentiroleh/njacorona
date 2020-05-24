@@ -7,7 +7,7 @@ const stateCollections = document.querySelectorAll('.states-collection');
 function filterStates(e) {
     const text = e.target.value.toLowerCase();
     stateCollections.forEach(function (eachState) {
-        const item = eachState.firstChild.textContent;
+        const item = eachState.firstElementChild.textContent;
         if (item.toLowerCase().indexOf(text) != -1) {
             eachState.style.display = 'block';
         } else {
