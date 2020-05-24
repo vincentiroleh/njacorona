@@ -4,9 +4,8 @@
   "description": "A Covid-19 Tracker for Nigeria, where users can view the current stats of the pandemic by states",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
