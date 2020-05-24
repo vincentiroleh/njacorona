@@ -1,6 +1,7 @@
 ![GitHub](https://img.shields.io/github/license/vincentiroleh/covid_19)
 ![GitHub last commit](https://img.shields.io/github/last-commit/vincentiroleh/covid_19)
 ![Website](https://img.shields.io/website?up_color=blue&up_message=online&url=https%3A%2F%2Fvincentiroleh.github.io%2Fcovid_19)
+![GitHub language count](https://img.shields.io/github/languages/count/vincentiroleh/covid_19)
 
 # [NIGERIA CORONA TRACKER](https://9ja-covid-tracker.azurewebsites.net)
 
