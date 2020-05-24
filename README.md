@@ -50,6 +50,7 @@ navigate to localhost:4000
 * [Express.js](https://expressjs.com) - The web framework used
 * [NPM](https://www.npmjs.com/) - Dependency Management
 * [EJS](https://ejs.co/) - The template engine used
+* [Azure](https://azure.microsoft.com/) - The cloud computing based platform for hosting applications
 
 
 ## Contributing
