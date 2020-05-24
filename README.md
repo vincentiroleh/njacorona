@@ -46,17 +46,17 @@ navigate to localhost:4000
 
 ## Built With
 
-* [Node.js](https://expressjs.com) - The web framework used
+* [Express.js](https://expressjs.com) - The web framework used
 * [NPM](https://www.npmjs.com/) - Dependency Management
 * [EJS](https://ejs.co/) - The template engine used
 
 
 ## Contributing
 
-1. [Fork it](https://vincentiroleh.github.io/covid_19)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
+1. [Fork it](https://github.com/vincentiroleh/covid_19)
+2. Create your feature branch (`git checkout -b ft-feature-name`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin ft-feature-name`)
 5. Create a new Pull Request
 
 
@@ -67,7 +67,7 @@ navigate to localhost:4000
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/vincentiroleh/covid_19/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
