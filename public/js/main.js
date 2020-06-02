@@ -31,7 +31,7 @@ const datasets = [Number(total), Number(active), Number(recovered), Number(death
 var frameworks = ['Total', 'Active', 'Recovered', 'Death'];
 
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'doughnut',
     data: {
         labels: frameworks,
         datasets: [{
