@@ -27,3 +27,7 @@ body {
   cursor: progress;
   background-color: whitesmoke;
 }
+
+footer {
+  bottom: 0;
+}
