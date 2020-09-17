@@ -30,7 +30,7 @@ git clone https://github.com/vincentiroleh/njacorona
 ```
 
 ```bash
-cd covid_19
+cd njacorona
 ```
 
 ```bash
