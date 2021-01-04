@@ -5,7 +5,11 @@
 
 # [NIGERIA CORONA TRACKER](https://njacorona.herokuapp.com)
 
-[Nigeria Corona Tracker](https://njacorona.herokuapp.com) acts as a portal for the public to keep track of the latest news development about the COVID-19 cases in Nigeria.
+Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+
+Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
+
+[Nigeria Corona Tracker](https://njacorona.herokuapp.com) was build to help **Nigerians** keep track of the current stats of the pandemic
 
 ## Getting Started
 
@@ -19,9 +23,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ### Installing
+
 - Install [Node.js](https://nodejs.org)
 - Clone this [repo](https://github.com/vincentiroleh/njacorona) to your local machine
 - Install dependencies 
+- Create a `.env` file with the content 
+  ```env
+  MYAPI=https://covidnigeria.herokuapp.com/api
+  ```
 - Start the application
 - Open your browser and navigate to [localhost:4000](localhost:4000)
 
@@ -38,12 +47,19 @@ npm install
 ```
 
 ```bash
-npm run dev
+npm start
 ```
 
-```
+```txt
 navigate to localhost:4000
 ```
+## Contributing
+
+1. [Fork this repo](https://github.com/vincentiroleh/njacorona)
+2. Create your feature branch (`git checkout -b ft-feature-name`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin ft-feature-name`)
+5. Create a new Pull Request
 
 ## Built With
 
@@ -53,18 +69,9 @@ navigate to localhost:4000
 * [Heroku](https://www.heroku.com/) - The cloud computing based platform for hosting applications
 
 
-## Contributing
-
-1. [Fork it](https://github.com/vincentiroleh/njacorona)
-2. Create your feature branch (`git checkout -b ft-feature-name`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin ft-feature-name`)
-5. Create a new Pull Request
-
-
 ## Author
 
-* **[Vincent Iroleh](https://iroleh.me)**
+* **[Vincent Iroleh](https://twitter.com/IrolehVincent)**
 
 
 ## License
